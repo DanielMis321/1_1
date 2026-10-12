@@ -1,0 +1,1 @@
+- [JDK after Replit config changes](replit-jdk-path.md) — reapply and verify system packages after replacing `.replit` if toolchain commands disappear from PATH.

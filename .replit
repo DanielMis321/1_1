@@ -1,3 +1,4 @@
+run = ["bash", "-lc", "mkdir -p out && javac -d out src/main/java/Main.java && java -cp out Main"]
 modules = ["nodejs-24"]
 
 [deployment]
@@ -18,3 +19,7 @@ expertMode = true
 [postMerge]
 path = "scripts/post-merge.sh"
 timeoutMs = 20000
+
+[nix]
+channel = "stable-25_05"
+packages = ["jdk21"]
